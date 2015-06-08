@@ -1,0 +1,239 @@
+@charset "shift_jis";
+
+
+
+body,html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	color: #666666;	/*全般の文字色*/
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background-color: #FFFFFF;
+	font: 75%/2.4 "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";	/*75%が文字サイズ。/2.4が行間。*/
+}
+h1,h2,h3,p,ul,li,dl,dt,dd{
+	margin: 0px;
+	padding: 0px;
+}
+ul{
+	list-style-type: none;
+}
+img {
+	border: none;
+}
+.fr {
+	float: right;
+}
+.color1 {
+	color: #25c0e6;
+}
+#contents ul.listmark {
+	padding: 0.5em 20px 0em 30px;
+	list-style: square;
+}
+
+
+
+/*コンテナー
+---------------------------------------------------------------------------*/
+#container {
+	text-align: left;
+	width: 100%;
+	height: 100%;
+	background: url(images/bg.gif) repeat-x top;	/*背景壁紙（ヘッダーとヘッダー下の点線）*/
+}
+
+
+
+/*全般のリンク設定
+---------------------------------------------------------------------------*/
+#contents a {
+	color: #666666;
+}
+#contents a:hover {
+	color: #25c0e6;	/*カーソルオーバー時の文字色*/
+	position: relative;
+	left: 1px;	/*オーバー時に左から1px移動する設定*/
+	top: 1px;	/*オーバー時に上から1px移動する設定*/
+}
+
+
+
+/*ヘッダー
+---------------------------------------------------------------------------*/
+#header {
+	height: 104px;
+	position: relative;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*ヘッダーのロゴ位置設定*/
+#header #logo {
+	position: absolute;
+	left: 0px;		/*ヘッダーブロックに対して左から0pxの位置に配置*/
+	bottom: 10px;	/*ヘッダーブロックに対して下から10pxの位置に配置*/
+}
+
+/*ヘッダーのh1タグの設定*/
+#header h1 {
+	font-size: 10px;	/*文字サイズ*/
+	font-weight: normal;
+	color: #FFFFFF;		/*文字色*/
+	text-align: right;	/*テキストの右寄せ。左よせがいいならこの１行を削除する。*/
+}
+
+
+
+/*右上メニュー
+---------------------------------------------------------------------------*/
+ul#menu {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	height: 50px;
+}
+ul#menu li {
+	float: left;
+	width: 120px;
+}
+ul#menu img {
+	vertical-align: bottom;
+}
+
+
+
+/*コンテンツ
+---------------------------------------------------------------------------*/
+#contents {
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 30px;
+	clear: left;
+}
+
+
+
+/*mainとsubを囲むボックス
+---------------------------------------------------------------------------*/
+#wrap {
+	float: left;
+	width: 735px;
+}
+
+
+
+/*サブコンテンツ（左ブロック）
+---------------------------------------------------------------------------*/
+#sub {
+	float: left;
+	width: 190px;
+}
+#sub h2 {
+	text-align: center;	/*左ブロックのh2見出しだけセンタリングする設定。他と同様左よせがいいならこの１行削除する。*/
+}
+
+
+
+/*左側メニュー
+---------------------------------------------------------------------------*/
+#sub .submenu li {
+	text-align: center;	/*センタリング設定。左よせがいいならこの１行削除する。*/
+	border-bottom: 1px solid #919589;	/*下線の幅と線種と色*/
+}
+
+/*左側メニューリンク設定*/
+#sub .submenu a {
+	display: block;
+	width: 190px;
+	text-decoration: none;
+}
+
+/*左側メニューリンクのカーソルオーバー時設定*/
+#sub .submenu a:hover {
+	background: #f8f9f8;	/*オーバー時の文字色*/
+	left: 0px;
+	top: 0px;
+}
+
+
+
+/*h2タグの装飾設定
+---------------------------------------------------------------------------*/
+#contents h2 {
+	background: #24bbe2 url(images/midashi_bg.gif) repeat-x top;	/*背景色、画像の設定*/
+	font-size: 100%;
+	color: #FFFFFF;	/*文字色を白色に*/
+	padding-right: 10px;
+	padding-left: 10px;
+	letter-spacing: 0.2em;	/*文字間隔を少し広げる*/
+	border-top: 1px solid #26b6dd;		/*枠線（上）の幅と線種と色*/
+	border-right: 1px solid #167ca1;	/*枠線（右）の幅と線種と色*/
+	border-bottom: 1px solid #167ca1;	/*枠線（下）の幅と線種と色*/
+	border-left: 1px solid #26b6dd;		/*枠線（左）の幅と線種と色*/
+	clear: both;
+}
+
+
+
+/*メインコンテンツ（中央ボックス）
+---------------------------------------------------------------------------*/
+#main {
+	float: right;
+	width: 530px;
+}
+
+
+
+/*サイドコンテンツ（右側ボックス）
+---------------------------------------------------------------------------*/
+#side {
+	float: right;
+	width: 250px;
+}
+
+
+
+/*フッター（最下部コピーライト部分）
+---------------------------------------------------------------------------*/
+#footer {
+	clear: both;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 11px;	/*文字サイズ*/
+	text-align: center;
+	padding-top: 70px;
+	background: url(images/footer_bg2.gif) repeat-x top;
+	padding-bottom: 30px;
+	letter-spacing: 0.2em;	/*文字の間隔を少し広げる*/
+}
+
+
+
+/*メインコンテンツ内の「What's New」部分
+---------------------------------------------------------------------------*/
+#main dl.new {
+	height: 100px;		/*What's Newボックスの高さ*/
+	overflow: auto;		/*この設定でiframe風に見える*/
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	border-right: 1px solid #919589;	/*What's Newのフチの右ライン*/
+	border-bottom: 1px solid #919589;	/*What's Newのフチの下ライン*/
+	border-left: 1px solid #919589;	/*What's Newボックスの背景色*/
+	line-height: 1.8;
+}
+
+#main dt {
+	font-weight: bold;	/*日付の文字を太字に。通常がよければこの１行を削除する。*/
+}
+
+#main dd {
+	border-bottom: 1px solid #919589;	/*説明文の下に1pxの直線(solid)を#919589の色で入れる。*/
+}
