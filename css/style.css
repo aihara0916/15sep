@@ -5,10 +5,10 @@
 ---------------------------------------------------------------------------*/
 body {
 	color: #222;	/*全体の文字色*/
-	background-color: #FFF;	/*背景色（古いブラウザだとここの色のみが出ます）*/
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#dcdcdc));	/*グラデーション*/
-	background-image: -webkit-linear-gradient(#FFF, #dcdcdc 50%);	/*同上*/
-	background-image: linear-gradient(#FFF, #dcdcdc 50%);			/*同上*/
+	background-color: #E0FFFF;	/*背景色（古いブラウザだとここの色のみが出ます）*/
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#E0FFFF), to(#dcdcdc));	/*グラデーション*/
+	background-image: -webkit-linear-gradient(#E0FFFF, #dcdcdc 50%);	/*同上*/
+	background-image: linear-gradient(#E0FFFF, #dcdcdc 50%);			/*同上*/
 	margin: 0px;
 	padding: 0px;
 	font: 14px/2 "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";	/*文字サイズ/行間、フォントファミリー*/
@@ -162,10 +162,10 @@ nav#menubar ul li#current a {
 /*mainコンテンツのh2タグの設定*/
 #main h2 {
 	clear: both;
-	background-color: #d6d6d6;	/*背景色（古いブラウザだとここの色のみが出ます）*/
-	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#d6d6d6));	/*グラデーション*/
-	background: -webkit-linear-gradient(#FFF, #d6d6d6);	/*同上*/
-	background: linear-gradient(#FFF, #d6d6d6);			/*同上*/
+	background-color: #E0FFFF;	/*背景色（古いブラウザだとここの色のみが出ます）*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E0FFFF));	/*グラデーション*/
+	background: -webkit-linear-gradient(#FFF, #E0FFFF);	/*同上*/
+	background: linear-gradient(#FFF, #E0FFFF);			/*同上*/
 	font-size: 100%;
 	color: #222;		/*文字色*/
 	padding: 7px 15px 7px 30px;	/*左から、上、右、下、左への余白*/
